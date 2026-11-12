@@ -1,0 +1,787 @@
+{
+  "tables": {
+    "companies": {
+      "raw_rows": 15961,
+      "raw_worksheet_columns": 26,
+      "raw_named_fields": 22,
+      "processed_rows": 15961,
+      "processed_columns": 23,
+      "note": "Four trailing worksheet columns have no header and no values and were dropped."
+    },
+    "targets": {
+      "raw_rows": 41593,
+      "raw_worksheet_columns": 28,
+      "raw_named_fields": 28,
+      "processed_rows": 41593,
+      "processed_columns": 32,
+      "note": ""
+    }
+  },
+  "checks": [
+    {
+      "name": "company_ids_unique",
+      "description": "Duplicated company sbti_id values",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "company_ids_valid",
+      "description": "Company sbti_id values that are not 4 followed by 7 digits",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "target_row_ids_unique",
+      "description": "Duplicated target row_entry_id values",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "target_company_ids_valid",
+      "description": "Target sbti_id values that are not 4 followed by 7 digits",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "orphan_target_records",
+      "description": "Target records whose sbti_id is not in the company table",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "companies_without_targets",
+      "description": "Companies with no target or commitment record",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "row_entry_id_suffix_matches_sbti_id",
+      "description": "Target records whose row_entry_id suffix differs from sbti_id",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "sector_agrees_across_tables",
+      "description": "Target records whose sector differs from the linked company",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "location_agrees_across_tables",
+      "description": "Target records whose location differs from the linked company",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "region_agrees_across_tables",
+      "description": "Target records whose region differs from the linked company",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "near_term_statuses_sum_to_companies",
+      "description": "Companies not covered by the three near-term statuses",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "near_term_status_values_known",
+      "description": "Companies with an unrecognised near-term status",
+      "count": 0,
+      "expected": 0,
+      "passed": true
+    }
+  ],
+  "change_log": [
+    {
+      "rule": "normalize_sbti_id",
+      "table": "companies",
+      "column": "sbti_id",
+      "examined": 15961,
+      "changed": 15961,
+      "note": "float to text"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "company_name",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "organization_type",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "location",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "region",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "sector",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "near_term_status",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "long_term_status",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "companies",
+      "column": "net_zero_status",
+      "examined": 15961,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "normalize_year",
+      "table": "companies",
+      "column": "near_term_target_year",
+      "examined": 15961,
+      "changed": 9735,
+      "note": ""
+    },
+    {
+      "rule": "normalize_year",
+      "table": "companies",
+      "column": "long_term_target_year",
+      "examined": 15961,
+      "changed": 2154,
+      "note": ""
+    },
+    {
+      "rule": "normalize_year",
+      "table": "companies",
+      "column": "net_zero_year",
+      "examined": 15961,
+      "changed": 2205,
+      "note": ""
+    },
+    {
+      "rule": "flag_unrecognised_year",
+      "table": "companies",
+      "column": "near_term_target_year",
+      "examined": 15961,
+      "changed": 0,
+      "note": "0 values not matching [FY|CY]yyyy, left unchanged"
+    },
+    {
+      "rule": "flag_unrecognised_year",
+      "table": "companies",
+      "column": "long_term_target_year",
+      "examined": 15961,
+      "changed": 0,
+      "note": "0 values not matching [FY|CY]yyyy, left unchanged"
+    },
+    {
+      "rule": "flag_unrecognised_year",
+      "table": "companies",
+      "column": "net_zero_year",
+      "examined": 15961,
+      "changed": 0,
+      "note": "0 values not matching [FY|CY]yyyy, left unchanged"
+    },
+    {
+      "rule": "normalize_date",
+      "table": "companies",
+      "column": "ba15_date",
+      "examined": 15961,
+      "changed": 2157,
+      "note": "to ISO date"
+    },
+    {
+      "rule": "normalize_date",
+      "table": "companies",
+      "column": "date_updated",
+      "examined": 15961,
+      "changed": 15961,
+      "note": "to ISO date"
+    },
+    {
+      "rule": "normalize_sbti_id",
+      "table": "targets",
+      "column": "sbti_id",
+      "examined": 41593,
+      "changed": 41593,
+      "note": "float to text"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "row_entry_id",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "company_name",
+      "examined": 41593,
+      "changed": 5,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "organization_type",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "location",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "region",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "sector",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "action",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "status",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "strip_whitespace",
+      "table": "targets",
+      "column": "year_type",
+      "examined": 41593,
+      "changed": 0,
+      "note": "leading/trailing only"
+    },
+    {
+      "rule": "normalize_year",
+      "table": "targets",
+      "column": "base_year",
+      "examined": 41593,
+      "changed": 41,
+      "note": ""
+    },
+    {
+      "rule": "normalize_year",
+      "table": "targets",
+      "column": "target_year",
+      "examined": 41593,
+      "changed": 41,
+      "note": ""
+    },
+    {
+      "rule": "flag_unrecognised_year",
+      "table": "targets",
+      "column": "base_year",
+      "examined": 41593,
+      "changed": 0,
+      "note": "0 values not matching [FY|CY]yyyy, left unchanged"
+    },
+    {
+      "rule": "flag_unrecognised_year",
+      "table": "targets",
+      "column": "target_year",
+      "examined": 41593,
+      "changed": 0,
+      "note": "0 values not matching [FY|CY]yyyy, left unchanged"
+    },
+    {
+      "rule": "normalize_scope",
+      "table": "targets",
+      "column": "scope",
+      "examined": 41593,
+      "changed": 782,
+      "note": ""
+    },
+    {
+      "rule": "normalize_date",
+      "table": "targets",
+      "column": "commitment_deadline",
+      "examined": 41593,
+      "changed": 12079,
+      "note": "to ISO date"
+    },
+    {
+      "rule": "normalize_date",
+      "table": "targets",
+      "column": "date_published",
+      "examined": 41593,
+      "changed": 41593,
+      "note": "to ISO date"
+    }
+  ],
+  "values_changed_total": 144307,
+  "missingness": {
+    "companies": [
+      {
+        "column": "sbti_id",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 15961
+      },
+      {
+        "column": "company_name",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 15961
+      },
+      {
+        "column": "isin",
+        "blank": 12985,
+        "blank_pct": 81.35,
+        "na_literal": 1,
+        "na_literal_pct": 0.01,
+        "distinct": 2977
+      },
+      {
+        "column": "lei",
+        "blank": 11728,
+        "blank_pct": 73.48,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 4234
+      },
+      {
+        "column": "organization_type",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 3
+      },
+      {
+        "column": "location",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 113
+      },
+      {
+        "column": "region",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 16
+      },
+      {
+        "column": "sector",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 51
+      },
+      {
+        "column": "near_term_status",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 3
+      },
+      {
+        "column": "near_term_target_classification",
+        "blank": 3653,
+        "blank_pct": 22.89,
+        "na_literal": 1,
+        "na_literal_pct": 0.01,
+        "distinct": 11
+      },
+      {
+        "column": "near_term_target_year",
+        "blank": 3653,
+        "blank_pct": 22.89,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 33
+      },
+      {
+        "column": "long_term_status",
+        "blank": 13129,
+        "blank_pct": 82.26,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 2
+      },
+      {
+        "column": "long_term_target_classification",
+        "blank": 13129,
+        "blank_pct": 82.26,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 2
+      },
+      {
+        "column": "long_term_target_year",
+        "blank": 13129,
+        "blank_pct": 82.26,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 32
+      },
+      {
+        "column": "net_zero_status",
+        "blank": 10834,
+        "blank_pct": 67.88,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 4
+      },
+      {
+        "column": "net_zero_year",
+        "blank": 13077,
+        "blank_pct": 81.93,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 37
+      },
+      {
+        "column": "full_target_language",
+        "blank": 3653,
+        "blank_pct": 22.89,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 12306
+      },
+      {
+        "column": "ba15_status",
+        "blank": 13804,
+        "blank_pct": 86.49,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 2
+      },
+      {
+        "column": "ba15_date",
+        "blank": 13804,
+        "blank_pct": 86.49,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 259
+      },
+      {
+        "column": "target_classification_long",
+        "blank": 3653,
+        "blank_pct": 22.89,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 11
+      },
+      {
+        "column": "status_reason",
+        "blank": 13615,
+        "blank_pct": 85.3,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 17
+      },
+      {
+        "column": "date_updated",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 456
+      }
+    ],
+    "targets": [
+      {
+        "column": "row_entry_id",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 41593
+      },
+      {
+        "column": "sbti_id",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 15961
+      },
+      {
+        "column": "company_name",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 15961
+      },
+      {
+        "column": "isin",
+        "blank": 29038,
+        "blank_pct": 69.81,
+        "na_literal": 1,
+        "na_literal_pct": 0.0,
+        "distinct": 2977
+      },
+      {
+        "column": "lei",
+        "blank": 24520,
+        "blank_pct": 58.95,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 4234
+      },
+      {
+        "column": "location",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 113
+      },
+      {
+        "column": "region",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 16
+      },
+      {
+        "column": "sector",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 51
+      },
+      {
+        "column": "organization_type",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 3
+      },
+      {
+        "column": "validation_route",
+        "blank": 2015,
+        "blank_pct": 4.84,
+        "na_literal": 10065,
+        "na_literal_pct": 24.2,
+        "distinct": 5
+      },
+      {
+        "column": "action",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 2
+      },
+      {
+        "column": "commitment_type",
+        "blank": 2982,
+        "blank_pct": 7.17,
+        "na_literal": 26531,
+        "na_literal_pct": 63.79,
+        "distinct": 6
+      },
+      {
+        "column": "commitment_deadline",
+        "blank": 12124,
+        "blank_pct": 29.15,
+        "na_literal": 17390,
+        "na_literal_pct": 41.81,
+        "distinct": 101
+      },
+      {
+        "column": "status",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 8
+      },
+      {
+        "column": "status_reason",
+        "blank": 3089,
+        "blank_pct": 7.43,
+        "na_literal": 35053,
+        "na_literal_pct": 84.28,
+        "distinct": 12
+      },
+      {
+        "column": "full_target_language",
+        "blank": 4524,
+        "blank_pct": 10.88,
+        "na_literal": 7556,
+        "na_literal_pct": 18.17,
+        "distinct": 12331
+      },
+      {
+        "column": "company_temperature_alignment",
+        "blank": 4519,
+        "blank_pct": 10.86,
+        "na_literal": 7565,
+        "na_literal_pct": 18.19,
+        "distinct": 11
+      },
+      {
+        "column": "target",
+        "blank": 4519,
+        "blank_pct": 10.86,
+        "na_literal": 7561,
+        "na_literal_pct": 18.18,
+        "distinct": 6
+      },
+      {
+        "column": "target_wording",
+        "blank": 6139,
+        "blank_pct": 14.76,
+        "na_literal": 5941,
+        "na_literal_pct": 14.28,
+        "distinct": 29494
+      },
+      {
+        "column": "scope",
+        "blank": 4520,
+        "blank_pct": 10.87,
+        "na_literal": 7560,
+        "na_literal_pct": 18.18,
+        "distinct": 9
+      },
+      {
+        "column": "target_value",
+        "blank": 6138,
+        "blank_pct": 14.76,
+        "na_literal": 9473,
+        "na_literal_pct": 22.78,
+        "distinct": 1081
+      },
+      {
+        "column": "type",
+        "blank": 4519,
+        "blank_pct": 10.86,
+        "na_literal": 7561,
+        "na_literal_pct": 18.18,
+        "distinct": 14
+      },
+      {
+        "column": "sub_type",
+        "blank": 4519,
+        "blank_pct": 10.86,
+        "na_literal": 7561,
+        "na_literal_pct": 18.18,
+        "distinct": 6
+      },
+      {
+        "column": "target_classification_short",
+        "blank": 4520,
+        "blank_pct": 10.87,
+        "na_literal": 17547,
+        "na_literal_pct": 42.19,
+        "distinct": 5
+      },
+      {
+        "column": "base_year",
+        "blank": 6138,
+        "blank_pct": 14.76,
+        "na_literal": 5945,
+        "na_literal_pct": 14.29,
+        "distinct": 21
+      },
+      {
+        "column": "target_year",
+        "blank": 6138,
+        "blank_pct": 14.76,
+        "na_literal": 6007,
+        "na_literal_pct": 14.44,
+        "distinct": 33
+      },
+      {
+        "column": "year_type",
+        "blank": 7748,
+        "blank_pct": 18.63,
+        "na_literal": 4332,
+        "na_literal_pct": 10.42,
+        "distinct": 4
+      },
+      {
+        "column": "date_published",
+        "blank": 0,
+        "blank_pct": 0.0,
+        "na_literal": 0,
+        "na_literal_pct": 0.0,
+        "distinct": 528
+      }
+    ]
+  }
+}

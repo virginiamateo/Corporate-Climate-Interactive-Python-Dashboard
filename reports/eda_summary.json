@@ -1,0 +1,428 @@
+{
+  "metadata": {
+    "raw_rows": {
+      "companies": 15961,
+      "targets": 41593
+    },
+    "raw_named_fields": {
+      "companies": 22,
+      "targets": 28
+    }
+  },
+  "rows": {
+    "companies": 15961,
+    "targets": 41593
+  },
+  "columns": {
+    "companies": 23,
+    "targets": 32
+  },
+  "distinct": {
+    "companies": 15961,
+    "target_records": 41593,
+    "locations": 113,
+    "sectors": 51,
+    "regions": 16,
+    "organization_types": 3
+  },
+  "company_kpis": {
+    "companies": 15961,
+    "near_term_validated": 12308,
+    "near_term_share": 77.11296284693941,
+    "net_zero_validated": 2886,
+    "net_zero_share": 18.0815738362258,
+    "locations": 113,
+    "sectors": 51
+  },
+  "near_term_status": {
+    "Validated Targets": {
+      "companies": 12308,
+      "share_pct": 77.11296284693941
+    },
+    "Commitment to Set Targets": {
+      "companies": 2066,
+      "share_pct": 12.944051124616252
+    },
+    "Commitment Removed": {
+      "companies": 1587,
+      "share_pct": 9.942986028444333
+    }
+  },
+  "net_zero_status": {
+    "Validated Targets": {
+      "companies": 2886,
+      "share_pct": 18.0815738362258
+    },
+    "Commitment to Set Targets": {
+      "companies": 946,
+      "share_pct": 5.926946933149552
+    },
+    "Commitment Removed": {
+      "companies": 1295,
+      "share_pct": 8.113526721383373
+    },
+    "Not recorded": {
+      "companies": 10834,
+      "share_pct": 67.87795250924128
+    }
+  },
+  "target_records": {
+    "records": 41593,
+    "action": {
+      "Commitment": 12080,
+      "Target": 29513
+    },
+    "target_records": 29513,
+    "type": {
+      "Absolute": 21510,
+      "Net-zero": 2884,
+      "Intensity": 2430,
+      "Engagement": 1313,
+      "Renewable electricity": 749,
+      "No-deforestation": 540,
+      "Fossil fuel equipment": 52,
+      "Fossil fuel finance": 15,
+      "Portfolio climate-alignment": 8,
+      "ICE Phaseout": 5,
+      "Deforestation exposure": 4,
+      "Fossil fuel transition policy": 3
+    },
+    "type_not_recorded": 0,
+    "scope": {
+      "1+2": 13229,
+      "3": 9315,
+      "1+2+3": 4923,
+      "2": 1183,
+      "1": 660,
+      "1+3": 202,
+      "2+3": 1
+    },
+    "scope_not_recorded": 0,
+    "target_year": {
+      "2020": 6,
+      "2021": 5,
+      "2022": 5,
+      "2023": 7,
+      "2024": 18,
+      "2025": 638,
+      "2026": 201,
+      "2027": 382,
+      "2028": 446,
+      "2029": 369,
+      "2030": 14669,
+      "2031": 569,
+      "2032": 705,
+      "2033": 725,
+      "2034": 1026,
+      "2035": 1771,
+      "2036": 90,
+      "2037": 10,
+      "2038": 16,
+      "2039": 25,
+      "2040": 1535,
+      "2041": 22,
+      "2042": 20,
+      "2044": 9,
+      "2045": 712,
+      "2046": 14,
+      "2047": 8,
+      "2048": 20,
+      "2049": 31,
+      "2050": 5388,
+      "2051": 6
+    },
+    "target_year_excluded": 65
+  },
+  "target_status_other_records": 29453,
+  "records_per_company": {
+    "min": 1,
+    "median": 2.0,
+    "mean": 2.6059144163899504,
+    "max": 25
+  },
+  "organization_type_counts": {
+    "Corporate": 8870,
+    "SME": 6772,
+    "Financial Institution": 319
+  },
+  "top_locations": [
+    {
+      "location": "Japan",
+      "companies": 2685,
+      "share_of_selection_pct": 16.82225424472151
+    },
+    {
+      "location": "United Kingdom of Great Britain and Northern Ireland",
+      "companies": 1980,
+      "share_of_selection_pct": 12.405237767057201
+    },
+    {
+      "location": "United States of America",
+      "companies": 1691,
+      "share_of_selection_pct": 10.594574274794812
+    },
+    {
+      "location": "China",
+      "companies": 1102,
+      "share_of_selection_pct": 6.904329302675271
+    },
+    {
+      "location": "Germany",
+      "companies": 992,
+      "share_of_selection_pct": 6.215149426727649
+    },
+    {
+      "location": "France",
+      "companies": 723,
+      "share_of_selection_pct": 4.529791366455735
+    },
+    {
+      "location": "India",
+      "companies": 609,
+      "share_of_selection_pct": 3.8155504041100183
+    },
+    {
+      "location": "Sweden",
+      "companies": 588,
+      "share_of_selection_pct": 3.6839797005200174
+    },
+    {
+      "location": "Netherlands (Kingdom of the)",
+      "companies": 551,
+      "share_of_selection_pct": 3.4521646513376356
+    },
+    {
+      "location": "Italy",
+      "companies": 408,
+      "share_of_selection_pct": 2.5562308126057265
+    }
+  ],
+  "top_sectors": [
+    {
+      "sector": "Professional Services",
+      "n": 1620,
+      "validated": 1384,
+      "commitment": 135,
+      "removed": 101,
+      "net_zero_validated": 417,
+      "validated_pct": 85.4320987654321,
+      "commitment_pct": 8.333333333333334,
+      "removed_pct": 6.234567901234568,
+      "net_zero_pct": 25.74074074074074,
+      "reconciles": true
+    },
+    {
+      "sector": "Electrical Equipment and Machinery",
+      "n": 1283,
+      "validated": 1075,
+      "commitment": 137,
+      "removed": 71,
+      "net_zero_validated": 168,
+      "validated_pct": 83.7879968823071,
+      "commitment_pct": 10.678098207326578,
+      "removed_pct": 5.533904910366329,
+      "net_zero_pct": 13.094310210444272,
+      "reconciles": true
+    },
+    {
+      "sector": "Software and Services",
+      "n": 1122,
+      "validated": 853,
+      "commitment": 144,
+      "removed": 125,
+      "net_zero_validated": 234,
+      "validated_pct": 76.02495543672015,
+      "commitment_pct": 12.834224598930481,
+      "removed_pct": 11.140819964349376,
+      "net_zero_pct": 20.855614973262032,
+      "reconciles": true
+    },
+    {
+      "sector": "Construction and Engineering",
+      "n": 1009,
+      "validated": 847,
+      "commitment": 89,
+      "removed": 73,
+      "net_zero_validated": 139,
+      "validated_pct": 83.94449950445986,
+      "commitment_pct": 8.820614469772051,
+      "removed_pct": 7.234886025768088,
+      "net_zero_pct": 13.77601585728444,
+      "reconciles": true
+    },
+    {
+      "sector": "Food and Beverage Processing",
+      "n": 1007,
+      "validated": 686,
+      "commitment": 210,
+      "removed": 111,
+      "net_zero_validated": 208,
+      "validated_pct": 68.12313803376365,
+      "commitment_pct": 20.854021847070506,
+      "removed_pct": 11.022840119165839,
+      "net_zero_pct": 20.655412115193645,
+      "reconciles": true
+    },
+    {
+      "sector": "Textiles, Apparel, Footwear and Luxury Goods",
+      "n": 856,
+      "validated": 629,
+      "commitment": 84,
+      "removed": 143,
+      "net_zero_validated": 164,
+      "validated_pct": 73.48130841121495,
+      "commitment_pct": 9.813084112149532,
+      "removed_pct": 16.705607476635514,
+      "net_zero_pct": 19.1588785046729,
+      "reconciles": true
+    },
+    {
+      "sector": "Trading Companies and Distributors, and Commercial Services and Supplies",
+      "n": 783,
+      "validated": 633,
+      "commitment": 96,
+      "removed": 54,
+      "net_zero_validated": 103,
+      "validated_pct": 80.84291187739464,
+      "commitment_pct": 12.260536398467433,
+      "removed_pct": 6.896551724137931,
+      "net_zero_pct": 13.154533844189016,
+      "reconciles": true
+    },
+    {
+      "sector": "Consumer Durables, Household and Personal Products",
+      "n": 642,
+      "validated": 525,
+      "commitment": 74,
+      "removed": 43,
+      "net_zero_validated": 92,
+      "validated_pct": 81.77570093457943,
+      "commitment_pct": 11.526479750778817,
+      "removed_pct": 6.697819314641745,
+      "net_zero_pct": 14.330218068535826,
+      "reconciles": true
+    },
+    {
+      "sector": "Automobiles and Components",
+      "n": 573,
+      "validated": 415,
+      "commitment": 90,
+      "removed": 68,
+      "net_zero_validated": 53,
+      "validated_pct": 72.4258289703316,
+      "commitment_pct": 15.706806282722512,
+      "removed_pct": 11.8673647469459,
+      "net_zero_pct": 9.24956369982548,
+      "reconciles": true
+    },
+    {
+      "sector": "Pharmaceuticals, Biotechnology and Life Sciences",
+      "n": 566,
+      "validated": 388,
+      "commitment": 139,
+      "removed": 39,
+      "net_zero_validated": 101,
+      "validated_pct": 68.55123674911661,
+      "commitment_pct": 24.558303886925795,
+      "removed_pct": 6.890459363957597,
+      "net_zero_pct": 17.84452296819788,
+      "reconciles": true
+    }
+  ],
+  "major_location_comparison": [
+    {
+      "location": "Japan",
+      "n": 2685,
+      "near_term_validated": 2603,
+      "near_term_pct": 96.94599627560521,
+      "net_zero_validated": 112,
+      "net_zero_pct": 4.171322160148976,
+      "meets_min_n": true
+    },
+    {
+      "location": "United Kingdom of Great Britain and Northern Ireland",
+      "n": 1980,
+      "near_term_validated": 1586,
+      "near_term_pct": 80.1010101010101,
+      "net_zero_validated": 696,
+      "net_zero_pct": 35.15151515151515,
+      "meets_min_n": true
+    },
+    {
+      "location": "United States of America",
+      "n": 1691,
+      "near_term_validated": 1180,
+      "near_term_pct": 69.7811945594323,
+      "net_zero_validated": 298,
+      "net_zero_pct": 17.622708456534596,
+      "meets_min_n": true
+    },
+    {
+      "location": "China",
+      "n": 1102,
+      "near_term_validated": 846,
+      "near_term_pct": 76.76950998185119,
+      "net_zero_validated": 122,
+      "net_zero_pct": 11.070780399274048,
+      "meets_min_n": true
+    },
+    {
+      "location": "Germany",
+      "n": 992,
+      "near_term_validated": 696,
+      "near_term_pct": 70.16129032258064,
+      "net_zero_validated": 203,
+      "net_zero_pct": 20.463709677419356,
+      "meets_min_n": true
+    },
+    {
+      "location": "France",
+      "n": 723,
+      "near_term_validated": 547,
+      "near_term_pct": 75.65698478561549,
+      "net_zero_validated": 109,
+      "net_zero_pct": 15.076071922544951,
+      "meets_min_n": true
+    },
+    {
+      "location": "India",
+      "n": 609,
+      "near_term_validated": 386,
+      "near_term_pct": 63.38259441707718,
+      "net_zero_validated": 100,
+      "net_zero_pct": 16.420361247947454,
+      "meets_min_n": true
+    },
+    {
+      "location": "Sweden",
+      "n": 588,
+      "near_term_validated": 501,
+      "near_term_pct": 85.20408163265306,
+      "net_zero_validated": 160,
+      "net_zero_pct": 27.210884353741495,
+      "meets_min_n": true
+    },
+    {
+      "location": "Netherlands (Kingdom of the)",
+      "n": 551,
+      "near_term_validated": 387,
+      "near_term_pct": 70.23593466424683,
+      "net_zero_validated": 112,
+      "net_zero_pct": 20.326678765880217,
+      "meets_min_n": true
+    },
+    {
+      "location": "Italy",
+      "n": 408,
+      "near_term_validated": 287,
+      "near_term_pct": 70.34313725490196,
+      "net_zero_validated": 66,
+      "net_zero_pct": 16.176470588235293,
+      "meets_min_n": true
+    }
+  ],
+  "date_updated": {
+    "min": "2015-06-01",
+    "max": "2026-11-05"
+  }
+}

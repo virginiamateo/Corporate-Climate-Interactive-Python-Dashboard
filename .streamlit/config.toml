@@ -1,0 +1,19 @@
+[theme]
+base = "dark"
+primaryColor = "#F6A212"
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#161616"
+textColor = "#FCFCFC"
+linkColor = "#36C6EA"
+font = "monospace"
+baseRadius = "none"
+borderColor = "#4A4A4A"
+showWidgetBorder = true
+dataframeHeaderBackgroundColor = "#272727"
+
+[theme.sidebar]
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#161616"
+
+[browser]
+gatherUsageStats = false

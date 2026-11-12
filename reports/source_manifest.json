@@ -1,0 +1,129 @@
+{
+  "source_page": "https://sciencebasedtargets.org/target-dashboard",
+  "note": "max_date_updated is the latest company record update in the file and is not the workbook publication date.",
+  "files": {
+    "companies-excel.xlsx": {
+      "official_url": "https://files.sciencebasedtargets.org/production/files/companies-excel.xlsx",
+      "bytes": 2350035,
+      "sha256": "e5c81f5da06e622c4bd0e0a797b3d8348a5c73fcb775a070a15cb19ab742afaa",
+      "worksheets": [
+        "Data"
+      ],
+      "worksheet": "Data",
+      "data_rows": 15961,
+      "named_fields": 22,
+      "worksheet_columns": 26,
+      "columns": [
+        "sbti_id",
+        "company_name",
+        "isin",
+        "lei",
+        "organization_type",
+        "location",
+        "region",
+        "sector",
+        "near_term_status",
+        "near_term_target_classification",
+        "near_term_target_year",
+        "long_term_status",
+        "long_term_target_classification",
+        "long_term_target_year",
+        "net_zero_status",
+        "net_zero_year",
+        "full_target_language",
+        "ba15_status",
+        "ba15_date",
+        "target_classification_long",
+        "status_reason",
+        "date_updated"
+      ],
+      "max_date_updated": "2026-11-05"
+    },
+    "targets-excel.xlsx": {
+      "official_url": "https://files.sciencebasedtargets.org/production/files/targets-excel.xlsx",
+      "bytes": 5860288,
+      "sha256": "f14f0661d4bdea302fafc2cf33aa11f48e8e105319ea0fd7a96fb4a404c5d309",
+      "worksheets": [
+        "WebsiteData"
+      ],
+      "worksheet": "WebsiteData",
+      "data_rows": 41593,
+      "named_fields": 28,
+      "worksheet_columns": 28,
+      "columns": [
+        "row_entry_id",
+        "sbti_id",
+        "company_name",
+        "isin",
+        "lei",
+        "location",
+        "region",
+        "sector",
+        "organization_type",
+        "validation_route",
+        "action",
+        "commitment_type",
+        "commitment_deadline",
+        "status",
+        "status_reason",
+        "full_target_language",
+        "company_temperature_alignment",
+        "target",
+        "target_wording",
+        "scope",
+        "target_value",
+        "type",
+        "sub_type",
+        "target_classification_short",
+        "base_year",
+        "target_year",
+        "year_type",
+        "date_published"
+      ]
+    },
+    "Alpha-Dashboard-Data-Dictionary.xlsx": {
+      "official_url": "https://files.sciencebasedtargets.org/production/files/Alpha-Dashboard-Data-Dictionary.xlsx",
+      "bytes": 75169,
+      "sha256": "b50ea0fd52b817b2ce85de1e2ab96598e5c39ce5f8be0b320ba9175ef6af2280",
+      "worksheets": [
+        "Data Dictionary 24092026",
+        "By Company <> By Target",
+        "Data Quality Standards_dateTBD",
+        "Formatting Rules",
+        "Sheet17",
+        "Legacy structure",
+        "Beta structure"
+      ],
+      "worksheet_shapes": {
+        "Data Dictionary 24092026": [
+          45,
+          8
+        ],
+        "By Company <> By Target": [
+          1000,
+          5
+        ],
+        "Data Quality Standards_dateTBD": [
+          1000,
+          9
+        ],
+        "Formatting Rules": [
+          1000,
+          5
+        ],
+        "Sheet17": [
+          1000,
+          7
+        ],
+        "Legacy structure": [
+          1000,
+          26
+        ],
+        "Beta structure": [
+          1000,
+          34
+        ]
+      }
+    }
+  }
+}

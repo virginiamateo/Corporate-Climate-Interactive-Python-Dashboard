@@ -1,0 +1,27 @@
+# Local working notes
+planning/
+
+# Data: SBTi terms do not expressly permit redistribution, see data/README.md
+data/raw/*
+data/processed/*
+data/*.xlsx
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Generated test output
+reports/pytest_junit*.xml
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# OS and editor
+.DS_Store
+.vscode/
+.idea/

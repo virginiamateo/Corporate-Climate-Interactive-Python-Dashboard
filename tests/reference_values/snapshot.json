@@ -1,0 +1,939 @@
+{
+  "hashes": {
+    "companies-excel.xlsx": "e5c81f5da06e622c4bd0e0a797b3d8348a5c73fcb775a070a15cb19ab742afaa",
+    "targets-excel.xlsx": "f14f0661d4bdea302fafc2cf33aa11f48e8e105319ea0fd7a96fb4a404c5d309",
+    "Alpha-Dashboard-Data-Dictionary.xlsx": "b50ea0fd52b817b2ce85de1e2ab96598e5c39ce5f8be0b320ba9175ef6af2280"
+  },
+  "companies_columns": [
+    "sbti_id",
+    "company_name",
+    "isin",
+    "lei",
+    "organization_type",
+    "location",
+    "region",
+    "sector",
+    "near_term_status",
+    "near_term_target_classification",
+    "near_term_target_year",
+    "long_term_status",
+    "long_term_target_classification",
+    "long_term_target_year",
+    "net_zero_status",
+    "net_zero_year",
+    "full_target_language",
+    "ba15_status",
+    "ba15_date",
+    "target_classification_long",
+    "status_reason",
+    "date_updated"
+  ],
+  "targets_columns": [
+    "row_entry_id",
+    "sbti_id",
+    "company_name",
+    "isin",
+    "lei",
+    "location",
+    "region",
+    "sector",
+    "organization_type",
+    "validation_route",
+    "action",
+    "commitment_type",
+    "commitment_deadline",
+    "status",
+    "status_reason",
+    "full_target_language",
+    "company_temperature_alignment",
+    "target",
+    "target_wording",
+    "scope",
+    "target_value",
+    "type",
+    "sub_type",
+    "target_classification_short",
+    "base_year",
+    "target_year",
+    "year_type",
+    "date_published"
+  ],
+  "companies_worksheet_width": 26,
+  "targets_worksheet_width": 28,
+  "company_rows": 15961,
+  "target_rows": 41593,
+  "distinct_company_ids": 15961,
+  "distinct_row_entry_ids": 41593,
+  "distinct_locations": 113,
+  "distinct_sectors": 51,
+  "distinct_regions": 16,
+  "distinct_organization_types": 3,
+  "orphan_target_records": 0,
+  "companies_without_targets": 0,
+  "row_entry_id_suffix_mismatches": 0,
+  "near_term_status": {
+    "Validated Targets": 12308,
+    "Commitment to Set Targets": 2066,
+    "Commitment Removed": 1587
+  },
+  "net_zero_status": {
+    "(blank)": 10834,
+    "Validated Targets": 2886,
+    "Commitment to Set Targets": 946,
+    "Commitment Removed": 1295
+  },
+  "target_action": {
+    "Target": 29513,
+    "Commitment": 12080
+  },
+  "target_status_other_rows": 29453,
+  "target_year_float_cells": 41,
+  "base_year_float_cells": 41,
+  "scope_float_cells": 782,
+  "company_net_zero_blank": 10834,
+  "company_max_date_updated": "2026-11-05",
+  "company_min_date_updated": "2015-06-01",
+  "target_min_date_published": "2015-06-01",
+  "target_max_date_published": "2026-11-05",
+  "by_location": {
+    "Afghanistan": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Albania": {
+      "companies": 2,
+      "near_term_validated": 2,
+      "net_zero_validated": 0
+    },
+    "Algeria": {
+      "companies": 2,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Argentina": {
+      "companies": 18,
+      "near_term_validated": 13,
+      "net_zero_validated": 6
+    },
+    "Armenia": {
+      "companies": 4,
+      "near_term_validated": 3,
+      "net_zero_validated": 0
+    },
+    "Australia": {
+      "companies": 170,
+      "near_term_validated": 117,
+      "net_zero_validated": 35
+    },
+    "Austria": {
+      "companies": 112,
+      "near_term_validated": 80,
+      "net_zero_validated": 25
+    },
+    "Azerbaijan": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Bahrain": {
+      "companies": 2,
+      "near_term_validated": 2,
+      "net_zero_validated": 1
+    },
+    "Bangladesh": {
+      "companies": 97,
+      "near_term_validated": 67,
+      "net_zero_validated": 6
+    },
+    "Belgium": {
+      "companies": 292,
+      "near_term_validated": 223,
+      "net_zero_validated": 39
+    },
+    "Bermuda": {
+      "companies": 3,
+      "near_term_validated": 3,
+      "net_zero_validated": 2
+    },
+    "Bolivia (Plurinational State of)": {
+      "companies": 2,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Bosnia and Herzegovina": {
+      "companies": 2,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Botswana": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 1
+    },
+    "Brazil": {
+      "companies": 147,
+      "near_term_validated": 101,
+      "net_zero_validated": 22
+    },
+    "Bulgaria": {
+      "companies": 11,
+      "near_term_validated": 7,
+      "net_zero_validated": 2
+    },
+    "Cambodia": {
+      "companies": 7,
+      "near_term_validated": 5,
+      "net_zero_validated": 1
+    },
+    "Canada": {
+      "companies": 196,
+      "near_term_validated": 154,
+      "net_zero_validated": 35
+    },
+    "Chile": {
+      "companies": 44,
+      "near_term_validated": 32,
+      "net_zero_validated": 8
+    },
+    "China": {
+      "companies": 1102,
+      "near_term_validated": 846,
+      "net_zero_validated": 122
+    },
+    "China, Hong Kong Special Administrative Region": {
+      "companies": 120,
+      "near_term_validated": 97,
+      "net_zero_validated": 34
+    },
+    "China, Macao Special Administrative Region": {
+      "companies": 2,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Colombia": {
+      "companies": 21,
+      "near_term_validated": 11,
+      "net_zero_validated": 2
+    },
+    "Costa Rica": {
+      "companies": 7,
+      "near_term_validated": 6,
+      "net_zero_validated": 1
+    },
+    "Croatia": {
+      "companies": 12,
+      "near_term_validated": 9,
+      "net_zero_validated": 0
+    },
+    "Cyprus": {
+      "companies": 5,
+      "near_term_validated": 4,
+      "net_zero_validated": 1
+    },
+    "Czechia": {
+      "companies": 30,
+      "near_term_validated": 21,
+      "net_zero_validated": 5
+    },
+    "Denmark": {
+      "companies": 381,
+      "near_term_validated": 331,
+      "net_zero_validated": 85
+    },
+    "Dominican Republic": {
+      "companies": 3,
+      "near_term_validated": 1,
+      "net_zero_validated": 1
+    },
+    "Ecuador": {
+      "companies": 6,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Egypt": {
+      "companies": 18,
+      "near_term_validated": 8,
+      "net_zero_validated": 2
+    },
+    "El Salvador": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Estonia": {
+      "companies": 10,
+      "near_term_validated": 7,
+      "net_zero_validated": 2
+    },
+    "Finland": {
+      "companies": 248,
+      "near_term_validated": 196,
+      "net_zero_validated": 47
+    },
+    "France": {
+      "companies": 723,
+      "near_term_validated": 547,
+      "net_zero_validated": 109
+    },
+    "Gabon": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Georgia": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 1
+    },
+    "Germany": {
+      "companies": 992,
+      "near_term_validated": 696,
+      "net_zero_validated": 203
+    },
+    "Greece": {
+      "companies": 31,
+      "near_term_validated": 17,
+      "net_zero_validated": 5
+    },
+    "Guatemala": {
+      "companies": 7,
+      "near_term_validated": 5,
+      "net_zero_validated": 1
+    },
+    "Honduras": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Hungary": {
+      "companies": 20,
+      "near_term_validated": 10,
+      "net_zero_validated": 1
+    },
+    "Iceland": {
+      "companies": 14,
+      "near_term_validated": 8,
+      "net_zero_validated": 2
+    },
+    "India": {
+      "companies": 609,
+      "near_term_validated": 386,
+      "net_zero_validated": 100
+    },
+    "Indonesia": {
+      "companies": 51,
+      "near_term_validated": 28,
+      "net_zero_validated": 10
+    },
+    "Iraq": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Ireland": {
+      "companies": 165,
+      "near_term_validated": 120,
+      "net_zero_validated": 34
+    },
+    "Israel": {
+      "companies": 15,
+      "near_term_validated": 13,
+      "net_zero_validated": 2
+    },
+    "Italy": {
+      "companies": 408,
+      "near_term_validated": 287,
+      "net_zero_validated": 66
+    },
+    "Japan": {
+      "companies": 2685,
+      "near_term_validated": 2603,
+      "net_zero_validated": 112
+    },
+    "Jersey": {
+      "companies": 4,
+      "near_term_validated": 4,
+      "net_zero_validated": 2
+    },
+    "Jordan": {
+      "companies": 4,
+      "near_term_validated": 2,
+      "net_zero_validated": 1
+    },
+    "Kazakhstan": {
+      "companies": 2,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Kenya": {
+      "companies": 11,
+      "near_term_validated": 8,
+      "net_zero_validated": 2
+    },
+    "Kuwait": {
+      "companies": 3,
+      "near_term_validated": 2,
+      "net_zero_validated": 1
+    },
+    "Latvia": {
+      "companies": 3,
+      "near_term_validated": 1,
+      "net_zero_validated": 1
+    },
+    "Lebanon": {
+      "companies": 3,
+      "near_term_validated": 3,
+      "net_zero_validated": 0
+    },
+    "Liechtenstein": {
+      "companies": 4,
+      "near_term_validated": 4,
+      "net_zero_validated": 1
+    },
+    "Lithuania": {
+      "companies": 23,
+      "near_term_validated": 17,
+      "net_zero_validated": 7
+    },
+    "Luxembourg": {
+      "companies": 61,
+      "near_term_validated": 51,
+      "net_zero_validated": 13
+    },
+    "Malaysia": {
+      "companies": 49,
+      "near_term_validated": 28,
+      "net_zero_validated": 10
+    },
+    "Malta": {
+      "companies": 7,
+      "near_term_validated": 6,
+      "net_zero_validated": 1
+    },
+    "Mauritius": {
+      "companies": 15,
+      "near_term_validated": 8,
+      "net_zero_validated": 5
+    },
+    "Mexico": {
+      "companies": 73,
+      "near_term_validated": 50,
+      "net_zero_validated": 9
+    },
+    "Monaco": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Montenegro": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Morocco": {
+      "companies": 9,
+      "near_term_validated": 3,
+      "net_zero_validated": 1
+    },
+    "Myanmar": {
+      "companies": 3,
+      "near_term_validated": 3,
+      "net_zero_validated": 0
+    },
+    "Netherlands (Kingdom of the)": {
+      "companies": 551,
+      "near_term_validated": 387,
+      "net_zero_validated": 112
+    },
+    "New Zealand": {
+      "companies": 56,
+      "near_term_validated": 50,
+      "net_zero_validated": 23
+    },
+    "Nigeria": {
+      "companies": 3,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Norway": {
+      "companies": 179,
+      "near_term_validated": 129,
+      "net_zero_validated": 46
+    },
+    "Oman": {
+      "companies": 2,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Pakistan": {
+      "companies": 80,
+      "near_term_validated": 36,
+      "net_zero_validated": 17
+    },
+    "Panama": {
+      "companies": 3,
+      "near_term_validated": 3,
+      "net_zero_validated": 1
+    },
+    "Papua New Guinea": {
+      "companies": 2,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Paraguay": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Peru": {
+      "companies": 18,
+      "near_term_validated": 11,
+      "net_zero_validated": 3
+    },
+    "Philippines": {
+      "companies": 11,
+      "near_term_validated": 6,
+      "net_zero_validated": 3
+    },
+    "Poland": {
+      "companies": 75,
+      "near_term_validated": 54,
+      "net_zero_validated": 5
+    },
+    "Portugal": {
+      "companies": 87,
+      "near_term_validated": 61,
+      "net_zero_validated": 13
+    },
+    "Qatar": {
+      "companies": 2,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Republic of Korea": {
+      "companies": 129,
+      "near_term_validated": 90,
+      "net_zero_validated": 18
+    },
+    "Romania": {
+      "companies": 24,
+      "near_term_validated": 17,
+      "net_zero_validated": 1
+    },
+    "Russian Federation": {
+      "companies": 5,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Samoa": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 1
+    },
+    "Saudi Arabia": {
+      "companies": 12,
+      "near_term_validated": 4,
+      "net_zero_validated": 3
+    },
+    "Serbia": {
+      "companies": 4,
+      "near_term_validated": 2,
+      "net_zero_validated": 1
+    },
+    "Sierra Leone": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Singapore": {
+      "companies": 103,
+      "near_term_validated": 69,
+      "net_zero_validated": 19
+    },
+    "Slovakia": {
+      "companies": 7,
+      "near_term_validated": 6,
+      "net_zero_validated": 1
+    },
+    "Slovenia": {
+      "companies": 10,
+      "near_term_validated": 2,
+      "net_zero_validated": 1
+    },
+    "South Africa": {
+      "companies": 52,
+      "near_term_validated": 38,
+      "net_zero_validated": 12
+    },
+    "Spain": {
+      "companies": 295,
+      "near_term_validated": 189,
+      "net_zero_validated": 53
+    },
+    "Sri Lanka": {
+      "companies": 29,
+      "near_term_validated": 16,
+      "net_zero_validated": 9
+    },
+    "Sweden": {
+      "companies": 588,
+      "near_term_validated": 501,
+      "net_zero_validated": 160
+    },
+    "Switzerland": {
+      "companies": 339,
+      "near_term_validated": 261,
+      "net_zero_validated": 93
+    },
+    "Taiwan, Province of China": {
+      "companies": 234,
+      "near_term_validated": 185,
+      "net_zero_validated": 59
+    },
+    "Thailand": {
+      "companies": 65,
+      "near_term_validated": 32,
+      "net_zero_validated": 12
+    },
+    "Trinidad and Tobago": {
+      "companies": 1,
+      "near_term_validated": 0,
+      "net_zero_validated": 0
+    },
+    "Tunisia": {
+      "companies": 7,
+      "near_term_validated": 3,
+      "net_zero_validated": 1
+    },
+    "Türkiye": {
+      "companies": 139,
+      "near_term_validated": 70,
+      "net_zero_validated": 24
+    },
+    "Uganda": {
+      "companies": 2,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Ukraine": {
+      "companies": 4,
+      "near_term_validated": 2,
+      "net_zero_validated": 0
+    },
+    "United Arab Emirates": {
+      "companies": 36,
+      "near_term_validated": 18,
+      "net_zero_validated": 7
+    },
+    "United Kingdom of Great Britain and Northern Ireland": {
+      "companies": 1980,
+      "near_term_validated": 1586,
+      "net_zero_validated": 696
+    },
+    "United Republic of Tanzania": {
+      "companies": 2,
+      "near_term_validated": 2,
+      "net_zero_validated": 0
+    },
+    "United States of America": {
+      "companies": 1691,
+      "near_term_validated": 1180,
+      "net_zero_validated": 298
+    },
+    "Uruguay": {
+      "companies": 3,
+      "near_term_validated": 3,
+      "net_zero_validated": 1
+    },
+    "Viet Nam": {
+      "companies": 44,
+      "near_term_validated": 24,
+      "net_zero_validated": 5
+    },
+    "Zambia": {
+      "companies": 2,
+      "near_term_validated": 2,
+      "net_zero_validated": 1
+    },
+    "Zimbabwe": {
+      "companies": 2,
+      "near_term_validated": 2,
+      "net_zero_validated": 2
+    }
+  },
+  "by_sector": {
+    "Aerospace and Defense": {
+      "companies": 47,
+      "near_term_validated": 38,
+      "net_zero_validated": 10
+    },
+    "Air Freight Transportation and Logistics": {
+      "companies": 109,
+      "near_term_validated": 75,
+      "net_zero_validated": 34
+    },
+    "Air Transportation - Airlines": {
+      "companies": 31,
+      "near_term_validated": 18,
+      "net_zero_validated": 1
+    },
+    "Air Transportation - Airport Services": {
+      "companies": 18,
+      "near_term_validated": 13,
+      "net_zero_validated": 7
+    },
+    "Automobiles and Components": {
+      "companies": 573,
+      "near_term_validated": 415,
+      "net_zero_validated": 53
+    },
+    "Banks, Diverse Financials, Insurance": {
+      "companies": 325,
+      "near_term_validated": 198,
+      "net_zero_validated": 9
+    },
+    "Building Products": {
+      "companies": 285,
+      "near_term_validated": 256,
+      "net_zero_validated": 40
+    },
+    "Chemicals": {
+      "companies": 453,
+      "near_term_validated": 319,
+      "net_zero_validated": 61
+    },
+    "Construction Materials": {
+      "companies": 186,
+      "near_term_validated": 161,
+      "net_zero_validated": 30
+    },
+    "Construction and Engineering": {
+      "companies": 1009,
+      "near_term_validated": 847,
+      "net_zero_validated": 139
+    },
+    "Consumer Durables, Household and Personal Products": {
+      "companies": 642,
+      "near_term_validated": 525,
+      "net_zero_validated": 92
+    },
+    "Containers and Packaging": {
+      "companies": 459,
+      "near_term_validated": 324,
+      "net_zero_validated": 70
+    },
+    "Education Services": {
+      "companies": 32,
+      "near_term_validated": 27,
+      "net_zero_validated": 5
+    },
+    "Electric Utilities and Independent Power Producers and Energy Traders (including Fossil, Alternative and Nuclear Energy)": {
+      "companies": 191,
+      "near_term_validated": 143,
+      "net_zero_validated": 54
+    },
+    "Electrical Equipment and Machinery": {
+      "companies": 1283,
+      "near_term_validated": 1075,
+      "net_zero_validated": 168
+    },
+    "Food Production - Agricultural Production": {
+      "companies": 193,
+      "near_term_validated": 118,
+      "net_zero_validated": 36
+    },
+    "Food Production - Animal Source Food Production": {
+      "companies": 112,
+      "near_term_validated": 60,
+      "net_zero_validated": 9
+    },
+    "Food and Beverage Processing": {
+      "companies": 1007,
+      "near_term_validated": 686,
+      "net_zero_validated": 208
+    },
+    "Food and Staples Retailing": {
+      "companies": 193,
+      "near_term_validated": 137,
+      "net_zero_validated": 32
+    },
+    "Forest and Paper Products - Forestry, Timber, Pulp and Paper, Rubber": {
+      "companies": 234,
+      "near_term_validated": 175,
+      "net_zero_validated": 21
+    },
+    "Gas Utilities": {
+      "companies": 2,
+      "near_term_validated": 2,
+      "net_zero_validated": 0
+    },
+    "Ground Transportation - Highways and Railtracks": {
+      "companies": 33,
+      "near_term_validated": 23,
+      "net_zero_validated": 6
+    },
+    "Ground Transportation - Railroads Transportation": {
+      "companies": 68,
+      "near_term_validated": 55,
+      "net_zero_validated": 19
+    },
+    "Ground Transportation - Trucking Transportation": {
+      "companies": 275,
+      "near_term_validated": 180,
+      "net_zero_validated": 29
+    },
+    "Healthcare Equipment and Supplies": {
+      "companies": 164,
+      "near_term_validated": 122,
+      "net_zero_validated": 32
+    },
+    "Healthcare Providers and Services, and Healthcare Technology": {
+      "companies": 232,
+      "near_term_validated": 168,
+      "net_zero_validated": 32
+    },
+    "Homebuilding": {
+      "companies": 63,
+      "near_term_validated": 58,
+      "net_zero_validated": 18
+    },
+    "Hotels, Restaurants and Leisure, and Tourism Services": {
+      "companies": 214,
+      "near_term_validated": 158,
+      "net_zero_validated": 49
+    },
+    "Media": {
+      "companies": 222,
+      "near_term_validated": 191,
+      "net_zero_validated": 52
+    },
+    "Mining - Coal": {
+      "companies": 1,
+      "near_term_validated": 1,
+      "net_zero_validated": 1
+    },
+    "Mining - Iron, Aluminum, Other Metals": {
+      "companies": 157,
+      "near_term_validated": 110,
+      "net_zero_validated": 31
+    },
+    "Mining - Other (Rare Minerals, Precious Metals and Gems)": {
+      "companies": 21,
+      "near_term_validated": 13,
+      "net_zero_validated": 2
+    },
+    "Pharmaceuticals, Biotechnology and Life Sciences": {
+      "companies": 566,
+      "near_term_validated": 388,
+      "net_zero_validated": 101
+    },
+    "Professional Services": {
+      "companies": 1620,
+      "near_term_validated": 1384,
+      "net_zero_validated": 417
+    },
+    "Public Agencies": {
+      "companies": 3,
+      "near_term_validated": 1,
+      "net_zero_validated": 0
+    },
+    "Real Estate": {
+      "companies": 423,
+      "near_term_validated": 352,
+      "net_zero_validated": 117
+    },
+    "Retailing": {
+      "companies": 375,
+      "near_term_validated": 310,
+      "net_zero_validated": 85
+    },
+    "Semiconductors and Semiconductors Equipment": {
+      "companies": 170,
+      "near_term_validated": 113,
+      "net_zero_validated": 29
+    },
+    "Software and Services": {
+      "companies": 1122,
+      "near_term_validated": 853,
+      "net_zero_validated": 234
+    },
+    "Solid Waste Management Utilities": {
+      "companies": 163,
+      "near_term_validated": 140,
+      "net_zero_validated": 13
+    },
+    "Specialized Consumer Services": {
+      "companies": 152,
+      "near_term_validated": 127,
+      "net_zero_validated": 18
+    },
+    "Specialized Financial Services, Consumer Finance, Insurance Brokerage Firms": {
+      "companies": 57,
+      "near_term_validated": 37,
+      "net_zero_validated": 19
+    },
+    "Technology Hardware and Equipment": {
+      "companies": 474,
+      "near_term_validated": 351,
+      "net_zero_validated": 120
+    },
+    "Telecommunication Services": {
+      "companies": 258,
+      "near_term_validated": 223,
+      "net_zero_validated": 82
+    },
+    "Textiles, Apparel, Footwear and Luxury Goods": {
+      "companies": 856,
+      "near_term_validated": 629,
+      "net_zero_validated": 164
+    },
+    "Tires": {
+      "companies": 19,
+      "near_term_validated": 17,
+      "net_zero_validated": 10
+    },
+    "Tobacco": {
+      "companies": 10,
+      "near_term_validated": 10,
+      "net_zero_validated": 8
+    },
+    "Trading Companies and Distributors, and Commercial Services and Supplies": {
+      "companies": 783,
+      "near_term_validated": 633,
+      "net_zero_validated": 103
+    },
+    "Water Transportation - Ports and Services": {
+      "companies": 17,
+      "near_term_validated": 12,
+      "net_zero_validated": 4
+    },
+    "Water Transportation - Water Transportation": {
+      "companies": 24,
+      "near_term_validated": 17,
+      "net_zero_validated": 8
+    },
+    "Water Utilities": {
+      "companies": 35,
+      "near_term_validated": 20,
+      "net_zero_validated": 4
+    }
+  },
+  "by_organization_type": {
+    "Corporate": {
+      "companies": 8870,
+      "near_term_validated": 5372,
+      "net_zero_validated": 2157
+    },
+    "Financial Institution": {
+      "companies": 319,
+      "near_term_validated": 189,
+      "net_zero_validated": 4
+    },
+    "SME": {
+      "companies": 6772,
+      "near_term_validated": 6747,
+      "net_zero_validated": 725
+    }
+  }
+}

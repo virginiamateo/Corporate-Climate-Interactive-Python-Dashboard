@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "climate-targets"
+version = "0.1.0"
+description = "Explorer for company climate targets in the SBTi directory"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "plotly",
+    "streamlit",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "playwright",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -m 'not browser' --junitxml=reports/pytest_junit.xml"
+markers = [
+    "data: needs the raw SBTi workbooks in data/raw",
+    "snapshot: needs workbooks whose hashes match the recorded snapshot",
+    "app: Streamlit AppTest",
+    "browser: Playwright browser test, run locally on demand",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "W"]
